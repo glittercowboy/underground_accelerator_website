@@ -19,9 +19,10 @@ export const Hero = () => {
             <br />
             Now Let's Unlock the Money.
           </h1>
-          <p className="text-xl sm:text-2xl text-off-white/80 mb-12">
-            Done-for-you systems to turn your fan base into recurring revenue - no touring, no endless releases, no hassle.
-          </p>
+          <div className="text-xl sm:text-2xl text-off-white/80 mb-12 space-y-2">
+            <p>Done-for-you systems to turn your fan base into recurring revenue</p>
+            <p>No touring, no endless releases, no hassle</p>
+          </div>
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
@@ -33,9 +34,11 @@ export const Hero = () => {
         </motion.div>
       </div>
       
-      {/* Background gradient effect */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient-circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+      {/* Background gradient effects */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent portal-gradient-vertical" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/20 via-primary/5 to-transparent portal-gradient" />
+      {/* Additional portal effect */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_50%,_var(--tw-gradient-stops))] from-secondary/10 via-transparent to-transparent portal-gradient-offset" />
 
       {/* Calendar Modal */}
       <CalendarModal

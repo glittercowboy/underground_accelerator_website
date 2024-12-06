@@ -8,7 +8,7 @@ import { DispellingMyth } from './components/DispellingMyth'
 import { Footer } from './components/Footer'
 import { PrivacyPolicy } from './components/PrivacyPolicy'
 import { Terms } from './components/Terms'
-import { Pricing } from './components/Pricing'
+import { Investment } from './components/Investment'
 
 // Home page component
 const Home = () => (
@@ -43,7 +43,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/investment" element={<Investment />} />
         </Routes>
         <Footer />
       </main>

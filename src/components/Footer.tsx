@@ -25,6 +25,19 @@ export const Footer = () => {
           <p className="text-off-white/40 text-sm">
             © {new Date().getFullYear()} Underground Accelerator. All rights reserved.
           </p>
+          <a 
+            href="mailto:hello@underground-accelerator.com"
+            className="text-off-white/60 hover:text-primary text-sm transition-colors mt-2 inline-block"
+          >
+            hello@underground-accelerator.com
+          </a>
+        </div>
+        <div className="flex justify-center mt-6">
+          <img 
+            src="/images/ua-logo.png" 
+            alt="Underground Accelerator" 
+            className="h-12 w-auto transition-transform hover:scale-105"
+          />
         </div>
       </div>
     </footer>
