@@ -7,6 +7,7 @@ import { WhyItWorks } from './components/WhyItWorks'
 import { DispellingMyth } from './components/DispellingMyth'
 import { Footer } from './components/Footer'
 import { PrivacyPolicy } from './components/PrivacyPolicy'
+import { Terms } from './components/Terms'
 
 // Home page component
 const Home = () => (
@@ -40,6 +41,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
         <Footer />
       </main>

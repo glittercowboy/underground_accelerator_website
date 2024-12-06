@@ -89,7 +89,7 @@ export const PrivacyPolicy = () => {
 
             {/* Continue with remaining sections... */}
             
-            <div className="mt-12 p-6 bg-dark-lighter rounded-lg border border-primary/10">
+            <div className="mt-12 p-6 bg-dark-lighter rounded-lg border border-primary/10 text-center">
               <h2 className="text-2xl font-bold mb-4 gradient-text">Contact Us</h2>
               <p className="text-off-white/80">If you have questions, concerns, or requests regarding this Privacy Policy, please contact us at:</p>
               <div className="mt-4 space-y-2 text-off-white/80">
@@ -100,7 +100,7 @@ export const PrivacyPolicy = () => {
               </div>
             </div>
 
-            <p className="mt-8 text-off-white/60 text-sm">
+            <p className="mt-8 text-off-white/60 text-sm text-center">
               This Privacy Policy outlines how we handle and protect your data. By using our website and services, you consent to the practices described herein.
             </p>
           </div>
