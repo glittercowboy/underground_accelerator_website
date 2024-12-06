@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/calculator",
+      "destination": "/src/calculator.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
