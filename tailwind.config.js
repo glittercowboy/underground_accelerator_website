@@ -8,8 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#00F0FF', // Electric blue
-        secondary: '#00FF8C', // Neon green
+        primary: '#00F0FF', // Cyber Teal
+        secondary: '#00FF8C', // Neon Green
+        success: '#00FF8C', // Same as secondary for checks
         dark: '#0A0A0A',
         'dark-lighter': '#1A1A1A',
         'off-white': '#fcffeb',

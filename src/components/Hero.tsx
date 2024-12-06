@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-dark relative overflow-hidden">
+    <section className="min-h-screen sm:h-[calc(100vh-4rem)] flex items-center justify-center bg-dark relative overflow-hidden">
       <div className="container relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="max-w-4xl mx-auto text-center sm:transform sm:translate-y-0 transform translate-y-12"
+          className="max-w-4xl mx-auto text-center sm:transform sm:translate-y-12 transform translate-y-12"
         >
           <h1 className="heading-xl mb-6">
             <span className="gradient-text">You Have the Fans.</span>
@@ -21,7 +21,7 @@ export const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="bg-primary hover:bg-opacity-90 text-dark px-8 py-4 rounded-lg text-lg font-semibold transition-all"
+            className="bg-gradient-to-r from-primary to-secondary text-dark px-8 py-4 rounded-lg text-lg font-semibold transition-all"
           >
             Let's Talk
           </motion.button>

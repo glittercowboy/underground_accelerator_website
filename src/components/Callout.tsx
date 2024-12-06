@@ -77,8 +77,8 @@ export const Callout = () => {
               </h3>
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
-                  <span className="text-secondary">✓</span>
-                  <p className="text-gray-300">{benefit}</p>
+                  <span className="text-success">✓</span>
+                  <p className="text-off-white/80">{benefit}</p>
                 </div>
               ))}
             </motion.div>

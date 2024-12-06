@@ -85,7 +85,7 @@ export const DispellingMyth = () => {
                 "Reclaim your freedom to focus on creating while our systems drive your growth.",
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-center space-x-3">
-                  <span className="text-secondary">✓</span>
+                  <span className="text-success">✓</span>
                   <p className="text-off-white/80">{item}</p>
                 </div>
               ))}
