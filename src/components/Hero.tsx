@@ -5,9 +5,9 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center justify-center bg-dark relative overflow-hidden">
       <div className="container relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
           className="max-w-4xl mx-auto text-center"
         >
           <h1 className="heading-xl mb-6">
@@ -15,12 +15,12 @@ export const Hero = () => {
             <br />
             Now Let's Unlock the Money.
           </h1>
-          <p className="text-xl sm:text-2xl text-gray-300 mb-12">
-            Done-for-you systems to turn your fan base into recurring revenue—no touring, no endless releases, no hassle.
+          <p className="text-xl sm:text-2xl text-off-white/80 mb-12">
+            Done-for-you systems to turn your fan base into recurring revenue - no touring, no endless releases, no hassle.
           </p>
           <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             className="bg-primary hover:bg-opacity-90 text-dark px-8 py-4 rounded-lg text-lg font-semibold transition-all"
           >
             Let's Talk

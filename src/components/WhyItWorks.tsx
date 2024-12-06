@@ -39,35 +39,38 @@ export const WhyItWorks = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.3,
+        duration: 1,
+        staggerChildren: 0.15,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, scale: 0.98 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
+      scale: 1,
+      transition: { 
+        duration: 0.8,
+        ease: "easeOut"
+      },
     },
   };
 
   const benefits = [
     {
       title: ["Focus on", "Your Art"],
-      description: "Continue creating music and connecting with your fans.",
+      description: "Continue creating music and connecting with fans while our systems handle all the complex business operations for you.",
       icon: ArtIcon,
     },
     {
       title: ["Keep Your", "Authenticity"],
-      description: "You'll never have to compromise your vision to grow.",
+      description: "Never compromise your vision to grow. Our systems adapt to your unique style and preserve your creative independence.",
       icon: AuthenticityIcon,
     },
     {
       title: ["Earn More,", "Less Stress"],
-      description: "Build predictable, recurring income from your fan base.",
+      description: "Build predictable, recurring income through automated systems that scale your revenue and reduce operational burden.",
       icon: EarningsIcon,
     },
   ];
@@ -88,7 +91,7 @@ export const WhyItWorks = () => {
             Keep your freedom.
           </h2>
           
-          <p className="text-xl text-gray-300 mb-16 text-center">
+          <p className="text-xl text-off-white/80 mb-16 text-center">
             You don't need to chase streams or be a mainstream success to thrive. Our cutting-edge systems take care of the hard stuff.
           </p>
 
@@ -107,7 +110,7 @@ export const WhyItWorks = () => {
                     <span key={i} className="block">{line}</span>
                   ))}
                 </h3>
-                <p className="text-gray-300 text-center">
+                <p className="text-off-white/80 text-center">
                   {benefit.description}
                 </p>
               </motion.div>
@@ -116,11 +119,11 @@ export const WhyItWorks = () => {
 
           <motion.p
             variants={itemVariants}
-            className="mt-16 text-xl text-center text-gray-300"
+            className="mt-16 text-xl text-center text-off-white/80"
           >
-            This isn't a course or a tool
+            Your vision deserves a system that scales <span className="text-off-white/80">- </span>
             <span className="text-primary font-semibold">
-              —it's your all-in-one solution for career growth.
+              let's build your automated revenue engine.
             </span>
           </motion.p>
         </motion.div>

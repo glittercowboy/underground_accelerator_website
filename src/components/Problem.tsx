@@ -8,23 +8,25 @@ export const Problem = () => {
   });
 
   const containerVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      y: 0,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.2,
+        duration: 1,
+        staggerChildren: 0.15,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -20 },
+    hidden: { opacity: 0, scale: 0.98 },
     visible: {
       opacity: 1,
-      x: 0,
-      transition: { duration: 0.5 },
+      scale: 1,
+      transition: { 
+        duration: 0.8,
+        ease: "easeOut"
+      },
     },
   };
 
@@ -44,7 +46,7 @@ export const Problem = () => {
             but where's the money?"
           </h2>
           
-          <p className="text-xl text-gray-300 mb-12 text-center">
+          <p className="text-xl text-off-white/80 mb-12 text-center">
             Even with 1,000,000+ monthly listeners, most artists are stuck in a cycle that's not working.
           </p>
 
@@ -60,14 +62,14 @@ export const Problem = () => {
                 className="flex items-start space-x-4 bg-dark/50 p-6 rounded-lg"
               >
                 <span className="text-primary text-2xl">•</span>
-                <p className="text-lg text-gray-200">{item}</p>
+                <p className="text-lg text-off-white/90">{item}</p>
               </motion.div>
             ))}
           </div>
 
           <motion.p
             variants={itemVariants}
-            className="mt-12 text-xl text-center text-gray-300"
+            className="mt-12 text-xl text-center text-off-white/80"
           >
             The truth is, the traditional music industry isn't set up for your success.
             <br />

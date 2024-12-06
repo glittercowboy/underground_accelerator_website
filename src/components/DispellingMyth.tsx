@@ -19,18 +19,21 @@ export const DispellingMyth = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.3,
+        duration: 1,
+        staggerChildren: 0.15,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, scale: 0.98 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
+      scale: 1,
+      transition: { 
+        duration: 0.8,
+        ease: "easeOut"
+      },
     },
   };
 
@@ -53,11 +56,11 @@ export const DispellingMyth = () => {
             variants={itemVariants}
             className="bg-dark-lighter p-8 md:p-12 rounded-2xl border border-primary/10"
           >
-            <p className="text-xl text-gray-300 mb-8">
-              The truth is, you don't need a radio hit or to chase pop stardom to achieve massive success. The artists thriving today are the ones who focus on building real, lasting connections with their fans—and monetizing those relationships in meaningful ways.
+            <p className="text-xl text-off-white/80 mb-8">
+              The truth is, you don't need a radio hit or to chase pop stardom to achieve massive success. The artists thriving today are the ones who focus on building real, lasting connections with their fans - and monetizing those relationships in meaningful ways.
             </p>
             
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-off-white/80">
               We give you the systems, strategies, and tools to do exactly that. You've already grown the fan base. Now it's time to unlock its full potential.
             </p>
           </motion.div>
@@ -72,7 +75,7 @@ export const DispellingMyth = () => {
               <span className="gradient-text"> Are You?</span>
             </h2>
             
-            <p className="text-xl text-gray-300 mb-12">
+            <p className="text-xl text-off-white/80 mb-12">
               You don't need a commercial hit, endless touring, or to sell out your vision to make life-changing money. With us, you'll:
             </p>
 
@@ -84,21 +87,21 @@ export const DispellingMyth = () => {
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-center space-x-3">
                   <span className="text-secondary">✓</span>
-                  <p className="text-gray-300">{item}</p>
+                  <p className="text-off-white/80">{item}</p>
                 </div>
               ))}
             </div>
 
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               className="bg-gradient-to-r from-primary to-secondary text-dark px-12 py-4 rounded-lg text-lg font-semibold transition-all inline-flex items-center"
             >
               Let's Talk
               <ArrowIcon />
             </motion.button>
             
-            <p className="mt-6 text-gray-400">
+            <p className="mt-6 text-off-white/60">
               We'll handle the complexity. You handle the creativity.
             </p>
           </motion.div>

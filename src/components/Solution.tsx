@@ -36,35 +36,38 @@ export const Solution = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.8,
-        staggerChildren: 0.3,
+        duration: 1,
+        staggerChildren: 0.15,
       },
     },
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
+    hidden: { opacity: 0, scale: 0.98 },
     visible: {
       opacity: 1,
-      y: 0,
-      transition: { duration: 0.5 },
+      scale: 1,
+      transition: { 
+        duration: 0.8,
+        ease: "easeOut"
+      },
     },
   };
 
   const solutions = [
     {
       title: ["AI +", "Automation"],
-      description: "Simplify fan engagement and grow income on autopilot.",
+      description: "Simplify fan engagement and grow income on autopilot with intelligent systems that work 24/7 to maximize your revenue.",
       icon: AutomationIcon,
     },
     {
       title: ["Community", "Building"],
-      description: "Create thriving, fan-driven communities that generate predictable, recurring revenue.",
+      description: "Create thriving, fan-driven communities that generate predictable, recurring revenue through deep, meaningful connections.",
       icon: CommunityIcon,
     },
     {
       title: ["Done-for-You", "Systems"],
-      description: "We handle everything, from backend setup and CRM integration to workflow automations and growth strategies.",
+      description: "We handle everything, from backend setup and CRM integration to workflow automations and growth strategies for your success.",
       icon: SystemsIcon,
     },
   ];
@@ -84,8 +87,8 @@ export const Solution = () => {
             <span className="gradient-text"> fan-powered empire</span>"
           </h2>
           
-          <p className="text-xl text-gray-300 mb-16 text-center">
-            This isn't what your manager is thinking about—this is next-level artist monetization.
+          <p className="text-xl text-off-white/80 mb-16 text-center">
+            This isn't what your manager is thinking about - this is next-level artist monetization.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -103,7 +106,7 @@ export const Solution = () => {
                     <span key={i} className="block">{line}</span>
                   ))}
                 </h3>
-                <p className="text-gray-300">
+                <p className="text-off-white/80 text-center">
                   {solution.description}
                 </p>
               </motion.div>
@@ -112,12 +115,12 @@ export const Solution = () => {
 
           <motion.p
             variants={itemVariants}
-            className="mt-16 text-xl text-center text-gray-300"
+            className="mt-16 text-xl text-center text-off-white/80"
           >
             We make the impossible seem effortless,
             <br />
             <span className="text-primary font-semibold">
-              so you can focus on what you do best.
+              transforming your fan base into a thriving business ecosystem.
             </span>
           </motion.p>
         </motion.div>
