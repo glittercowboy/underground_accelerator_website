@@ -9,6 +9,7 @@ import { Footer } from './components/Footer'
 import { PrivacyPolicy } from './components/PrivacyPolicy'
 import { Terms } from './components/Terms'
 import { Investment } from './components/Investment'
+import { Calculator } from './components/Calculator'
 
 // Home page component
 const Home = () => (
@@ -29,9 +30,11 @@ const Home = () => (
     </div>
     <Problem />
     <Solution />
-    <Callout />
-    <WhyItWorks />
     <DispellingMyth />
+    <WhyItWorks />
+    <Investment />
+    <Callout />
+    <Calculator />
   </>
 );
 
