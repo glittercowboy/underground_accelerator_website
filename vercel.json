@@ -5,6 +5,10 @@
       "destination": "/src/calculator.html"
     },
     {
+      "source": "/embed",
+      "destination": "/src/embed.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
