@@ -8,7 +8,7 @@ export const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-4xl mx-auto text-center sm:transform sm:translate-y-0 transform translate-y-12"
         >
           <h1 className="heading-xl mb-6">
             <span className="gradient-text">You Have the Fans.</span>
