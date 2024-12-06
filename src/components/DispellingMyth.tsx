@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useState } from 'react';
+import { CalendarModal } from './CalendarModal';
 
 const ArrowIcon = () => (
   <svg className="w-5 h-5 ml-2 inline-block" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,6 +15,8 @@ export const DispellingMyth = () => {
     triggerOnce: true,
     threshold: 0.1,
   });
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -94,6 +98,7 @@ export const DispellingMyth = () => {
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
+              onClick={() => setIsModalOpen(true)}
               className="bg-gradient-to-r from-primary to-secondary text-dark px-12 py-4 rounded-lg text-lg font-semibold transition-all inline-flex items-center"
             >
               Let's Talk
@@ -106,6 +111,13 @@ export const DispellingMyth = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Calendar Modal */}
+      <CalendarModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        calendarUrl="https://link.underground-accelerator.com/widget/booking/ubLdkpbX3jVzogwQamzH"
+      />
     </section>
   );
 }; 

@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { CalendarModal } from './CalendarModal';
 
 export const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="min-h-screen sm:h-[calc(100vh-4rem)] flex items-center justify-center bg-dark relative overflow-hidden">
       <div className="container relative z-10">
@@ -21,6 +25,7 @@ export const Hero = () => {
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            onClick={() => setIsModalOpen(true)}
             className="bg-gradient-to-r from-primary to-secondary text-dark px-8 py-4 rounded-lg text-lg font-semibold transition-all"
           >
             Let's Talk
@@ -30,7 +35,19 @@ export const Hero = () => {
       
       {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient-circle_at_center,_var(--tw-gradient-stops))] from-primary/10 via-transparent to-transparent" />
+
+      {/* Calendar Modal */}
+      <CalendarModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        calendarUrl="https://link.underground-accelerator.com/widget/booking/ubLdkpbX3jVzogwQamzH"
+      />
+
+      {/* Load the required script */}
+      {isModalOpen && (
+        <script src="https://link.underground-accelerator.com/js/form_embed.js" type="text/javascript" />
+      )}
     </section>
   );
 }; 
