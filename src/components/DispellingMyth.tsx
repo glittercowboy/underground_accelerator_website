@@ -80,9 +80,9 @@ export const DispellingMyth = () => {
 
             <div className="space-y-4 mb-12">
               {[
-                "Earn more by leveraging the fan base you've already built.",
-                "Work smarter with cutting-edge systems that maximize your revenue and connection.",
-                "Reclaim your freedom to focus on your art, while your systems work for you.",
+                "Earn more by leveraging the fan base you've already built into sustainable income.",
+                "Work smarter with cutting-edge systems that maximize your revenue and fanbase.",
+                "Reclaim your freedom to focus on creating while our systems drive your growth.",
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-center space-x-3">
                   <span className="text-secondary">✓</span>
