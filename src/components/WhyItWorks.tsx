@@ -58,18 +58,18 @@ export const WhyItWorks = () => {
 
   const benefits = [
     {
-      title: ["Focus on", "Your Art"],
-      description: "Continue creating music and connecting with fans while our systems handle all the complex business operations for you.",
+      title: ["Effortless", "Implementation"],
+      description: "Complete technical setup and management. Just 2-4 hours of your time per week for content and mentoring.",
       icon: ArtIcon,
     },
     {
-      title: ["Keep Your", "Authenticity"],
-      description: "Never compromise your vision to grow. Our systems adapt to your unique style and preserve your creative independence.",
+      title: ["Brand", "Enhancement"],
+      description: "Elevate your position from artist to industry mentor. Build deeper, more meaningful connections with your audience.",
       icon: AuthenticityIcon,
     },
     {
-      title: ["Earn More,", "Less Stress"],
-      description: "Build predictable, recurring income through automated systems that scale your revenue and reduce operational burden.",
+      title: ["Sustainable", "Growth"],
+      description: "Create predictable monthly recurring revenue while maintaining your artistic focus and integrity.",
       icon: EarningsIcon,
     },
   ];
@@ -85,13 +85,13 @@ export const WhyItWorks = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 className="heading-lg mb-8 text-center">
-            <span className="gradient-text">Make more. Tour less.</span>
+            <span className="gradient-text">Beyond Just Teaching</span>
             <br />
-            Keep your freedom.
+            A Complete Partnership
           </h2>
           
           <p className="text-xl text-off-white/80 mb-16 text-center">
-            You don't need to chase streams or be a mainstream success to thrive. Our cutting-edge systems take care of the hard stuff.
+            We handle all technical aspects, allowing you to focus solely on sharing your knowledge and mentoring your community.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">

@@ -40,20 +40,21 @@ export const Problem = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 className="heading-lg mb-8 text-center">
-            <span className="gradient-text">"Millions of listeners,</span>
+            <span className="gradient-text">You've Mastered Your Craft</span>
             <br />
-            but where's the money?"
+            Now Share That Mastery
           </h2>
           
           <p className="text-xl text-off-white/80 mb-12 text-center">
-            Even with 1,000,000+ monthly listeners, most artists are stuck in a cycle that's not working.
+            As an accomplished artist, you've acquired invaluable knowledge that others would gladly pay to learn.
+            The challenge? Building an educational platform while maintaining your artistic focus.
           </p>
 
           <div className="space-y-6">
             {[
-              "Chained to constant touring and releases just to stay afloat.",
-              "Missing the real value of their fan base, leaving money on the table.",
-              "Paying huge percentages to managers and middlemen who don't deliver results.",
+              "Limited time to create and manage educational systems",
+              "Need to maintain artistic integrity while teaching",
+              "Complex technical requirements for course delivery",
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -70,10 +71,10 @@ export const Problem = () => {
             variants={itemVariants}
             className="mt-12 text-xl text-center text-off-white/80"
           >
-            The truth is, the traditional music industry isn't set up for your success.
+            Your expertise is too valuable to keep to yourself.
             <br />
             <span className="text-primary font-semibold">
-              But what if you didn't need to rely on the old ways anymore?
+              Let us handle the technical side while you focus on sharing your knowledge.
             </span>
           </motion.p>
         </motion.div>

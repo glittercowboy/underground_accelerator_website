@@ -15,13 +15,13 @@ export const Hero = () => {
           className="max-w-4xl mx-auto text-center sm:transform sm:translate-y-12 transform translate-y-12"
         >
           <h1 className="heading-xl mb-6">
-            <span className="gradient-text">You Have the Fans.</span>
+            <span className="gradient-text">Transform Your Expertise</span>
             <br />
-            Now Let's Unlock the Money.
+            Into Premium Education
           </h1>
           <div className="text-xl sm:text-2xl text-off-white/80 mb-12 space-y-2">
-            <p>Done-for-you systems to turn your fan base into recurring revenue</p>
-            <p>No touring, no endless releases, no hassle</p>
+            <p>For accomplished underground dance music artists with 1M+ listeners</p>
+            <p>Create sustainable revenue while deepening fan connections</p>
           </div>
           <motion.button
             whileHover={{ scale: 1.02 }}

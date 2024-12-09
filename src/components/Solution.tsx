@@ -116,10 +116,10 @@ export const Solution = () => {
             variants={itemVariants}
             className="mt-16 text-xl text-center text-off-white/80"
           >
-            We make the impossible seem effortless,
+            We help you share your expertise with purpose,
             <br />
             <span className="text-primary font-semibold">
-              transforming your fan base into a thriving business ecosystem.
+              transforming your artistry into impactful education.
             </span>
           </motion.p>
         </motion.div>

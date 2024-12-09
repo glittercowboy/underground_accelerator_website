@@ -8,8 +8,7 @@ import { DispellingMyth } from './components/DispellingMyth'
 import { Footer } from './components/Footer'
 import { PrivacyPolicy } from './components/PrivacyPolicy'
 import { Terms } from './components/Terms'
-import { Investment } from './components/Investment'
-import { Calculator } from './components/Calculator'
+import CaseStudy from './components/CaseStudy'
 
 // Home page component
 const Home = () => (
@@ -30,11 +29,10 @@ const Home = () => (
     </div>
     <Problem />
     <Solution />
-    <DispellingMyth />
     <WhyItWorks />
-    <Investment />
+    <CaseStudy />
+    <DispellingMyth />
     <Callout />
-    <Calculator />
   </>
 );
 
@@ -46,12 +44,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
-          <Route path="/investment" element={<Investment />} />
         </Routes>
         <Footer />
       </main>
     </Router>
-  )
+  );
 }
 
 export default App

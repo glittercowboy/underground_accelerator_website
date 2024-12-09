@@ -51,8 +51,8 @@ export const DispellingMyth = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 className="heading-lg mb-8 text-center">
-            Big Success Doesn't Mean
-            <span className="gradient-text"> Selling Out</span>
+            Sharing Knowledge Doesn't Mean
+            <span className="gradient-text"> Compromising Art</span>
           </h2>
           
           <motion.div 
@@ -60,11 +60,11 @@ export const DispellingMyth = () => {
             className="bg-dark-lighter p-8 md:p-12 rounded-2xl border border-primary/10"
           >
             <p className="text-xl text-off-white/80 mb-8">
-              The truth is, you don't need a radio hit or to chase pop stardom to achieve massive success. The artists thriving today are the ones who focus on building real, lasting connections with their fans - and monetizing those relationships in meaningful ways.
+              The truth is, you don't need to choose between being an artist and being an educator. The most respected artists today are the ones who share their expertise and build educational communities that create real value for their audience.
             </p>
             
             <p className="text-xl text-off-white/80">
-              We give you the systems, strategies, and tools to do exactly that. You've already grown the fan base. Now it's time to unlock its full potential.
+              We give you the systems, strategies, and tools to do exactly that. You've already mastered your craft. Now it's time to share that knowledge in a way that benefits both you and your community.
             </p>
           </motion.div>
 
@@ -74,19 +74,19 @@ export const DispellingMyth = () => {
             className="mt-20 text-center"
           >
             <h2 className="heading-lg mb-8">
-              Your Fans Are Ready.
-              <span className="gradient-text"> Are You?</span>
+              Your Knowledge is Valuable.
+              <span className="gradient-text"> Ready to Share It?</span>
             </h2>
             
             <p className="text-xl text-off-white/80 mb-12">
-              You don't need a commercial hit, endless touring, or to sell out your vision to make life-changing money. With us, you'll:
+              You don't need to rely solely on music releases or touring to make an impact. With our educational community platform, you'll:
             </p>
 
             <div className="space-y-4 mb-12">
               {[
-                "Earn more by leveraging the fan base you've already built into sustainable income.",
-                "Work smarter with cutting-edge systems that maximize your revenue and fanbase.",
-                "Reclaim your freedom to focus on creating while our systems drive your growth.",
+                "Create lasting value by sharing your expertise through structured educational content.",
+                "Build a thriving community of learners who value your knowledge and experience.",
+                "Maintain creative freedom while helping others grow in their artistic journey.",
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-center space-x-3">
                   <span className="text-success">✓</span>
